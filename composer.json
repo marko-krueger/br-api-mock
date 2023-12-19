@@ -1,0 +1,34 @@
+{
+  "name": "thomann/br-mockserver",
+  "description": "Bloomreach API Mock Server",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repositr.thomann.de/package/composer"
+    }
+  ],
+  "authors": [
+    {
+      "name": "mkrueger",
+      "email": "marko.krueger@thomann.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Thomann\\BrMockServer\\": "src"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.4 || ^8.2",
+    "ramsey/uuid": "^4.2",
+    "thomann/nc-routing": "^3.0.0"
+  }
+}
