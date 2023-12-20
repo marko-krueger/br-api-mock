@@ -53,7 +53,6 @@ class ApiController
             $lastAction = 'index';
             $lastActionType = 'update';
             $lastActionWrite = "{$jobId}|{$accountId}|{$catalogName}|{$lastAction}|$lastActionType";
-            $jobId = Uuid::uuid4()->toString();
 
             file_put_contents($this->logDir . '/ingest.log', $lastActionWrite . PHP_EOL, FILE_APPEND);
         }
