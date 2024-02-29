@@ -28,6 +28,8 @@
   },
   "require": {
     "php": "^7.4 || ^8.2",
+    "ext-pdo": "*",
+    "php-di/php-di": "^6.4",
     "ramsey/uuid": "^4.2",
     "thomann/nc-routing": "^3.0.0"
   }
